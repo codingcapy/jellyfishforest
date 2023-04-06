@@ -1,3 +1,10 @@
+/*
+Author: Paul Kim
+Date: April 5, 2023
+Version: 1.0
+Script for mini art gallery webapp collapse feature
+*/
+
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
