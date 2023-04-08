@@ -2,16 +2,33 @@
 Author: Paul Kim
 Date: April 5, 2023
 Version: 1.0
-Script for mini art gallery webapp img enlarge feature
+Script for mini art gallery webapp features
 */
 
-const images = document.querySelectorAll('.image');
+/*Category collapse feature */
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+
+/*Pointer rotation feature */
 const collapsible1 = document.getElementById('category1');
 const collapsible2 = document.getElementById('category2');
 const collapsible3 = document.getElementById('category3');
 const collapsible4 = document.getElementById('category4');
 const collapsible5 = document.getElementById('category5');
 const collapsible6 = document.getElementById('category6');
+const anchor1 = document.getElementById('anchor1');
 
 let clickCount = 0;
 let clickCount1 = 0;
@@ -21,22 +38,16 @@ let clickCount4 = 0;
 let clickCount5 = 0;
 let clickCount6 = 0;
 
-// Add a click event listener to each image
-images.forEach(image => {
-  image.addEventListener('click', () => {
-    // Toggle the "enlarged" CSS class on the clicked image
-    image.classList.toggle('enlarged');
-  });
-});
-
   const pointer = document.getElementById('pointer1');
   collapsible1.addEventListener('click', () => {
     clickCount++;
     if (clickCount % 2 !== 0) {
       pointer.style.transform = "rotate(90deg)";
+      anchor1.style.backgroundColor = "orange";
     }
     else{
       pointer.style.transform = "rotate(0deg)";
+      anchor1.style.backgroundColor =  "#FD554A";
     }
   })
 
@@ -95,3 +106,31 @@ images.forEach(image => {
       pointer6.style.transform = "rotate(0deg)";
     }
   })
+
+  /*Enlarge image feature*/
+  const images = document.querySelectorAll('.image');
+
+  images.forEach(image => {
+    image.addEventListener('click', () => {
+  
+      image.classList.toggle('enlarged');
+    });
+  });
+
+/*To top button*/
+let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}

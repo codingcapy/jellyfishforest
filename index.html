@@ -1,11 +1,10 @@
+<!doctype html>
 <!-- 
     Author: Paul Kim
     Date: April 5, 2023
     Version: 1.0
     This is a mini web-app designed upon request to display a side-scrolling gallery of art
 -->
-
-<!doctype html>
 <html lang="en">
 
 <head>
@@ -13,7 +12,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./script/collapsible.js" defer="defer"></script>
     <script src="./script/main.js" defer="defer"></script>
 </head>
 
@@ -24,7 +22,7 @@
         </header>
         <main>
             <noscript>Please enable JavaScript for a better experience!</noscript>
-            <div class="collapsible" id="category1"><a href="#category1"><span>category name 1</span> <span><svg
+            <div class="collapsible" id="category1"><a href="#category1" id="anchor1"><span>category name 1</span> <span><svg
                             width="32" height="21" viewBox="0 0 32 21" fill="none" xmlns="http://www.w3.org/2000/svg"
                             class="pointer" id="pointer1">
                             <path d="M4 3.5L16 15.5L28 3.5" stroke="white" stroke-width="7" stroke-linecap="round" />
@@ -94,13 +92,17 @@
                     <img class="image" src="./html/image/art10.jpg" alt="">
                 </div>
             </div>
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><svg width="32" height="21" viewBox="0 0 32 21"
+                    fill="none" xmlns="http://www.w3.org/2000/svg" class="pointer" id="pointer-top">
+                    <path d="M4 3.5L16 15.5L28 3.5" stroke="white" stroke-width="7" stroke-linecap="round" />
+                </svg></button>
         </main>
         <footer>
             <a href="https://stephology.bigcartel.com/" target="_blank" id="shop-link">
                 <p>💖shop page💖</p>
             </a>
         </footer>
-    </div>
+    </div> <!-- end div wrapper -->
 </body>
 
 </html>
