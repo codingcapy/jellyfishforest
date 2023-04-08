@@ -15,7 +15,7 @@ Stylesheet for mini art gallery webapp
 html {
     box-sizing: border-box;
     font-family: 'Bough';
-    background-color: rgb(243,185,172);
+    background-color: rgb(243, 185, 172);
     color: white;
 }
 
@@ -23,23 +23,8 @@ html {
     box-sizing: inherit;
 }
 
-main{
+main {
     flex: 1;
-}
-
-h2 {
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom:5px;
-    margin-top: 5px;
-    background-color: rgb(255,85,74);
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 18px;
-}
-
-footer {
-    background-color: rgb(248, 61, 14);
 }
 
 footer p {
@@ -54,23 +39,37 @@ footer p {
 
 }
 
+.pointer{
+    width: 15px;
+}
+
 .scrollable {
     display: flex;
     overflow-x: scroll;
     width: 100%;
     -webkit-overflow-scrolling: touch;
-    scrollbar-color: rgb(255,85,74) white;
-  }
+    scrollbar-color: rgb(255, 85, 74) white;
+}
 
 .collapsible {
     cursor: pointer;
-    
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: rgb(255, 85, 74);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+
 }
 
 .image {
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 10px;
-    margin-right:10px;
+    margin-right: 10px;
     max-width: 300px;
     height: auto;
 }
@@ -78,10 +77,16 @@ footer p {
 .enlarged {
     max-width: none;
     height: auto;
-  }
+}
 
-#wrapper{
+#wrapper {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+#shop-link {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
 }
