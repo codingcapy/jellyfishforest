@@ -6,6 +6,9 @@ Script for mini art gallery webapp img enlarge feature
 */
 
 const images = document.querySelectorAll('.image');
+const collapsibles = document.querySelectorAll('.collapsible');
+
+let clickCount = 0;
 
 // Add a click event listener to each image
 images.forEach(image => {
@@ -14,3 +17,16 @@ images.forEach(image => {
     image.classList.toggle('enlarged');
   });
 });
+
+collapsibles.forEach(collapsible  => {
+  const pointer = collapsible.querySelector('.pointer');
+  collapsible.addEventListener('click', () => {
+    clickCount++;
+    if (clickCount % 2 !== 0) {
+      pointer.style.transform = "rotate(90deg)";
+    }
+    else{
+      pointer.style.transform = "rotate(0deg)";
+    }
+  })
+})
