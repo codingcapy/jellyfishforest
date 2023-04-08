@@ -17,6 +17,7 @@ html {
     font-family: 'Bough';
     background-color: rgb(243, 185, 172);
     color: white;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -26,6 +27,8 @@ html {
 main {
     flex: 1;
 }
+
+
 
 footer p {
     text-align: center;
@@ -51,10 +54,11 @@ footer p {
     scrollbar-color: rgb(255, 85, 74) white;
 }
 
-.collapsible {
+.collapsible a{
     cursor: pointer;
     display: flex;
     justify-content: space-between;
+    color: white;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 5px;
@@ -64,6 +68,11 @@ footer p {
     border-radius: 10px;
     font-size: 18px;
 
+}
+
+.collapsible a{
+    text-decoration: none;
+    color: white;
 }
 
 .image {
