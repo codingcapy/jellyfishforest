@@ -50,6 +50,10 @@ let clickCount3 = 0;
 let clickCount4 = 0;
 let clickCount5 = 0;
 let clickCount6 = 0;
+let clickCount7 = 0;
+let clickCount8 = 0;
+let clickCount9 = 0;
+let clickCount10 = 0;
 
   const pointer = document.getElementById('pointer1');
   collapsible1.addEventListener('click', () => {
@@ -132,8 +136,8 @@ let clickCount6 = 0;
 
   const pointer7 = document.getElementById('pointer7');
   collapsible7.addEventListener('click', () => {
-    clickCount6++;
-    if (clickCount6 % 2 !== 0) {
+    clickCount7++;
+    if (clickCount7 % 2 !== 0) {
       pointer7.style.transform = "rotate(180deg)";
       anchor7.style.backgroundColor = "#FF896F";
     }
@@ -145,8 +149,8 @@ let clickCount6 = 0;
 
   const pointer8 = document.getElementById('pointer8');
   collapsible8.addEventListener('click', () => {
-    clickCount6++;
-    if (clickCount6 % 2 !== 0) {
+    clickCount8++;
+    if (clickCount8 % 2 !== 0) {
       pointer8.style.transform = "rotate(180deg)";
       anchor8.style.backgroundColor = "#FF896F";
     }
@@ -158,8 +162,8 @@ let clickCount6 = 0;
 
   const pointer9 = document.getElementById('pointer9');
   collapsible9.addEventListener('click', () => {
-    clickCount6++;
-    if (clickCount6 % 2 !== 0) {
+    clickCount9++;
+    if (clickCount9 % 2 !== 0) {
       pointer9.style.transform = "rotate(180deg)";
       anchor9.style.backgroundColor = "#FF896F";
     }
@@ -171,8 +175,8 @@ let clickCount6 = 0;
 
   const pointer10 = document.getElementById('pointer10');
   collapsible10.addEventListener('click', () => {
-    clickCount6++;
-    if (clickCount6 % 2 !== 0) {
+    clickCount10++;
+    if (clickCount10 % 2 !== 0) {
       pointer10.style.transform = "rotate(180deg)";
       anchor10.style.backgroundColor = "#FF896F";
     }
