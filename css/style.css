@@ -18,6 +18,8 @@ html {
     background-color: rgb(243, 185, 172);
     color: white;
     scroll-behavior: smooth;
+    max-width: 425px;
+    margin: auto;
 }
 
 * {
@@ -28,10 +30,10 @@ main {
     flex: 1;
 }
 
-
-
 footer p {
     text-align: center;
+    font-size: 20px;
+    padding-bottom: 20px;
 }
 
 .content {
@@ -42,7 +44,7 @@ footer p {
 
 }
 
-.pointer{
+.pointer {
     width: 15px;
     height: auto;
 }
@@ -55,7 +57,7 @@ footer p {
     scrollbar-color: rgb(255, 85, 74) white;
 }
 
-.collapsible a{
+.collapsible a {
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -71,11 +73,11 @@ footer p {
 
 }
 
-.collapsible a:focus{
+.collapsible a:focus {
     background-color: orange;
 }
 
-.collapsible a{
+.collapsible a {
     text-decoration: none;
     color: white;
 }
@@ -106,26 +108,40 @@ footer p {
 }
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgb(57, 57, 207); /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 20px;
+    /* Place the button at the bottom of the page */
+    right: 30px;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgb(57, 57, 207);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    cursor: pointer;
+    /* Add a mouse pointer on hover */
+    padding: 15px;
+    /* Some padding */
+    border-radius: 10px;
+    /* Rounded corners */
+    font-size: 18px;
+    /* Increase font size */
+}
 
-  #pointer-top{
+#myBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
+}
+
+#pointer-top {
     color: white;
     transform: rotate(180deg);
-  }
+}

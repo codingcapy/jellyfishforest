@@ -127,7 +127,6 @@ let clickCount6 = 0;
 
   images.forEach(image => {
     image.addEventListener('click', () => {
-  
       image.classList.toggle('enlarged');
     });
   });
