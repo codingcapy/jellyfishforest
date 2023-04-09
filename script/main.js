@@ -21,7 +21,7 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-/*Pointer rotation feature */
+/*Pointer rotation + anchor color change feature */
 const collapsible1 = document.getElementById('category1');
 const collapsible2 = document.getElementById('category2');
 const collapsible3 = document.getElementById('category3');
@@ -29,6 +29,11 @@ const collapsible4 = document.getElementById('category4');
 const collapsible5 = document.getElementById('category5');
 const collapsible6 = document.getElementById('category6');
 const anchor1 = document.getElementById('anchor1');
+const anchor2 = document.getElementById('anchor2');
+const anchor3 = document.getElementById('anchor3');
+const anchor4 = document.getElementById('anchor4');
+const anchor5 = document.getElementById('anchor5');
+const anchor6 = document.getElementById('anchor6');
 
 let clickCount = 0;
 let clickCount1 = 0;
@@ -43,7 +48,7 @@ let clickCount6 = 0;
     clickCount++;
     if (clickCount % 2 !== 0) {
       pointer.style.transform = "rotate(90deg)";
-      anchor1.style.backgroundColor = "orange";
+      anchor1.style.backgroundColor = "#FF896F";
     }
     else{
       pointer.style.transform = "rotate(0deg)";
@@ -57,9 +62,11 @@ let clickCount6 = 0;
     clickCount2++;
     if (clickCount2 % 2 !== 0) {
       pointer2.style.transform = "rotate(90deg)";
+      anchor2.style.backgroundColor = "#FF896F";
     }
     else{
       pointer2.style.transform = "rotate(0deg)";
+      anchor2.style.backgroundColor =  "#FD554A";
     }
   })
 
@@ -68,9 +75,11 @@ let clickCount6 = 0;
     clickCount3++;
     if (clickCount3 % 2 !== 0) {
       pointer3.style.transform = "rotate(90deg)";
+      anchor3.style.backgroundColor = "#FF896F";
     }
     else{
       pointer3.style.transform = "rotate(0deg)";
+      anchor3.style.backgroundColor =  "#FD554A";
     }
   })
 
@@ -79,9 +88,11 @@ let clickCount6 = 0;
     clickCount4++;
     if (clickCount4 % 2 !== 0) {
       pointer4.style.transform = "rotate(90deg)";
+      anchor4.style.backgroundColor = "#FF896F";
     }
     else{
       pointer4.style.transform = "rotate(0deg)";
+      anchor4.style.backgroundColor =  "#FD554A";
     }
   })
 
@@ -90,9 +101,11 @@ let clickCount6 = 0;
     clickCount5++;
     if (clickCount5 % 2 !== 0) {
       pointer5.style.transform = "rotate(90deg)";
+      anchor5.style.backgroundColor = "#FF896F";
     }
     else{
       pointer5.style.transform = "rotate(0deg)";
+      anchor5.style.backgroundColor =  "#FD554A";
     }
   })
 
@@ -101,9 +114,11 @@ let clickCount6 = 0;
     clickCount6++;
     if (clickCount6 % 2 !== 0) {
       pointer6.style.transform = "rotate(90deg)";
+      anchor6.style.backgroundColor = "#FF896F";
     }
     else{
       pointer6.style.transform = "rotate(0deg)";
+      anchor6.style.backgroundColor =  "#FD554A";
     }
   })
 
