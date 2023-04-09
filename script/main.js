@@ -28,12 +28,20 @@ const collapsible3 = document.getElementById('category3');
 const collapsible4 = document.getElementById('category4');
 const collapsible5 = document.getElementById('category5');
 const collapsible6 = document.getElementById('category6');
+const collapsible7 = document.getElementById('category7');
+const collapsible8 = document.getElementById('category8');
+const collapsible9 = document.getElementById('category9');
+const collapsible10 = document.getElementById('category10');
 const anchor1 = document.getElementById('anchor1');
 const anchor2 = document.getElementById('anchor2');
 const anchor3 = document.getElementById('anchor3');
 const anchor4 = document.getElementById('anchor4');
 const anchor5 = document.getElementById('anchor5');
 const anchor6 = document.getElementById('anchor6');
+const anchor7 = document.getElementById('anchor7');
+const anchor8 = document.getElementById('anchor8');
+const anchor9 = document.getElementById('anchor9');
+const anchor10 = document.getElementById('anchor10');
 
 let clickCount = 0;
 let clickCount1 = 0;
@@ -47,7 +55,7 @@ let clickCount6 = 0;
   collapsible1.addEventListener('click', () => {
     clickCount++;
     if (clickCount % 2 !== 0) {
-      pointer.style.transform = "rotate(90deg)";
+      pointer.style.transform = "rotate(180deg)";
       anchor1.style.backgroundColor = "#FF896F";
     }
     else{
@@ -61,7 +69,7 @@ let clickCount6 = 0;
   collapsible2.addEventListener('click', () => {
     clickCount2++;
     if (clickCount2 % 2 !== 0) {
-      pointer2.style.transform = "rotate(90deg)";
+      pointer2.style.transform = "rotate(180deg)";
       anchor2.style.backgroundColor = "#FF896F";
     }
     else{
@@ -74,7 +82,7 @@ let clickCount6 = 0;
   collapsible3.addEventListener('click', () => {
     clickCount3++;
     if (clickCount3 % 2 !== 0) {
-      pointer3.style.transform = "rotate(90deg)";
+      pointer3.style.transform = "rotate(180deg)";
       anchor3.style.backgroundColor = "#FF896F";
     }
     else{
@@ -87,7 +95,7 @@ let clickCount6 = 0;
   collapsible4.addEventListener('click', () => {
     clickCount4++;
     if (clickCount4 % 2 !== 0) {
-      pointer4.style.transform = "rotate(90deg)";
+      pointer4.style.transform = "rotate(180deg)";
       anchor4.style.backgroundColor = "#FF896F";
     }
     else{
@@ -100,7 +108,7 @@ let clickCount6 = 0;
   collapsible5.addEventListener('click', () => {
     clickCount5++;
     if (clickCount5 % 2 !== 0) {
-      pointer5.style.transform = "rotate(90deg)";
+      pointer5.style.transform = "rotate(180deg)";
       anchor5.style.backgroundColor = "#FF896F";
     }
     else{
@@ -113,12 +121,64 @@ let clickCount6 = 0;
   collapsible6.addEventListener('click', () => {
     clickCount6++;
     if (clickCount6 % 2 !== 0) {
-      pointer6.style.transform = "rotate(90deg)";
+      pointer6.style.transform = "rotate(180deg)";
       anchor6.style.backgroundColor = "#FF896F";
     }
     else{
       pointer6.style.transform = "rotate(0deg)";
       anchor6.style.backgroundColor =  "#FD554A";
+    }
+  })
+
+  const pointer7 = document.getElementById('pointer7');
+  collapsible7.addEventListener('click', () => {
+    clickCount6++;
+    if (clickCount6 % 2 !== 0) {
+      pointer7.style.transform = "rotate(180deg)";
+      anchor7.style.backgroundColor = "#FF896F";
+    }
+    else{
+      pointer7.style.transform = "rotate(0deg)";
+      anchor7.style.backgroundColor =  "#FD554A";
+    }
+  })
+
+  const pointer8 = document.getElementById('pointer8');
+  collapsible8.addEventListener('click', () => {
+    clickCount6++;
+    if (clickCount6 % 2 !== 0) {
+      pointer8.style.transform = "rotate(180deg)";
+      anchor8.style.backgroundColor = "#FF896F";
+    }
+    else{
+      pointer6.style.transform = "rotate(0deg)";
+      anchor8.style.backgroundColor =  "#FD554A";
+    }
+  })
+
+  const pointer9 = document.getElementById('pointer9');
+  collapsible9.addEventListener('click', () => {
+    clickCount6++;
+    if (clickCount6 % 2 !== 0) {
+      pointer9.style.transform = "rotate(180deg)";
+      anchor9.style.backgroundColor = "#FF896F";
+    }
+    else{
+      pointer9.style.transform = "rotate(0deg)";
+      anchor9.style.backgroundColor =  "#FD554A";
+    }
+  })
+
+  const pointer10 = document.getElementById('pointer10');
+  collapsible10.addEventListener('click', () => {
+    clickCount6++;
+    if (clickCount6 % 2 !== 0) {
+      pointer10.style.transform = "rotate(180deg)";
+      anchor10.style.backgroundColor = "#FF896F";
+    }
+    else{
+      pointer10.style.transform = "rotate(0deg)";
+      anchor10.style.backgroundColor =  "#FD554A";
     }
   })
 
