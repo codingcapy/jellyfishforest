@@ -1,7 +1,7 @@
 /*
 Author: Paul Kim
-Date: April 5, 2023
-Version: 1.0
+Date: April 21, 2023
+Version: 2.0
 Stylesheet for art gallery web app
 */
 
@@ -90,10 +90,33 @@ footer p {
     height: auto;
 }
 
-.enlarged {
-    max-width: none;
-    height: auto;
-}
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .lightbox-image {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .lightbox.fade-in {
+    opacity: 1;
+  }
+  
+  .lightbox.fade-out {
+    opacity: 0;
+  }
 
 #wrapper {
     display: flex;

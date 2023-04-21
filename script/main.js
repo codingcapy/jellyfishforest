@@ -1,7 +1,7 @@
 /*
 Author: Paul Kim
-Date: April 5, 2023
-Version: 1.0
+Date: April 21, 2023
+Version: 2.0
 Script for art gallery web app features
 */
 
@@ -88,11 +88,28 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-/*Enlarge image feature*/
+/*Lightbox feature */
 const images = document.querySelectorAll('.image');
 
 images.forEach(image => {
   image.addEventListener('click', () => {
-    image.classList.toggle('enlarged');
+    const fullSizeImage = document.createElement('img');
+    fullSizeImage.src = image.src;
+    fullSizeImage.classList.add('lightbox-image');
+    const lightbox = document.createElement('div');
+    lightbox.classList.add('lightbox');
+    lightbox.appendChild(fullSizeImage);
+    document.body.appendChild(lightbox);
+
+    lightbox.addEventListener('click', () => {
+      lightbox.classList.add('fade-out');
+      setTimeout(() => {
+        document.body.removeChild(lightbox);
+      }, 500);
+    });
+
+    setTimeout(() => {
+      lightbox.classList.add('fade-in');
+    }, 50);
   });
 });
