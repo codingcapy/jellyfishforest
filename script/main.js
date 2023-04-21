@@ -68,7 +68,6 @@ styleCategories('pointer8', collapsibleGhibli, anchor8);
 styleCategories('pointer9', collapsibleDbz, anchor9);
 styleCategories('pointer10', collapsibleSailormoon, anchor10);
 styleCategories('pointer5', collapsibleOther, anchor5);
-styleCategories('pointer6', collapsible6, anchor6);
 
 
 /*To top button*/
