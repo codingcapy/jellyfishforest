@@ -26,6 +26,10 @@ html {
     box-sizing: inherit;
 }
 
+:root{
+
+}
+
 main {
     flex: 1;
 }
@@ -103,20 +107,20 @@ footer p {
     z-index: 9999;
     opacity: 0;
     transition: opacity 0.5s;
-  }
-  
-  .lightbox-image {
+}
+
+.lightbox-image {
     max-width: 100%;
     max-height: 100%;
-  }
-  
-  .lightbox.fade-in {
+}
+
+.lightbox.fade-in {
     opacity: 1;
-  }
-  
-  .lightbox.fade-out {
+}
+
+.lightbox.fade-out {
     opacity: 0;
-  }
+}
 
 #wrapper {
     display: flex;
@@ -131,38 +135,25 @@ footer p {
 }
 
 #myBtn {
-    display: none;
-    /* Hidden by default */
+    opacity: 0;
     position: fixed;
-    /* Fixed/sticky position */
     bottom: 20px;
-    /* Place the button at the bottom of the page */
     right: 30px;
-    /* Place the button 30px from the right */
     z-index: 99;
-    /* Make sure it does not overlap */
     border: none;
-    /* Remove borders */
     outline: none;
-    /* Remove outline */
     background-color: rgb(57, 57, 207);
-    /* Set a background color */
     color: white;
-    /* Text color */
     cursor: pointer;
-    /* Add a mouse pointer on hover */
     padding: 15px;
-    /* Some padding */
     border-radius: 10px;
-    /* Rounded corners */
     font-size: 18px;
-    /* Increase font size */
-}
-
-#myBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
-}
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  #myBtn:hover {
+    background-color: orange;
+  }
 
 #pointer-top {
     color: white;

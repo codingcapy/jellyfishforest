@@ -71,17 +71,32 @@ styleCategories('pointer5', collapsibleOther, anchor5);
 
 
 /*To top button*/
-let mybutton = document.getElementById("myBtn");
-
-window.onscroll = function () { scrollFunction() };
+const mybutton = document.getElementById("myBtn");
+let isScrolling;
+let timeout;
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
+  if (window.scrollY > 20) {
+    mybutton.style.opacity = "1";
+    clearTimeout(timeout);
+    timeout = setTimeout(() => {
+      mybutton.style.opacity = "0";
+    }, 1500);
   } else {
-    mybutton.style.display = "none";
+    mybutton.style.opacity = "0";
   }
+  isScrolling = false;
 }
+
+function debounceScroll() {
+  if (isScrolling) {
+    return;
+  }
+  isScrolling = true;
+  window.requestAnimationFrame(scrollFunction);
+}
+
+window.addEventListener("scroll", debounceScroll);
 
 function topFunction() {
   document.body.scrollTop = 0; // For Safari
@@ -106,10 +121,10 @@ images.forEach(image => {
       setTimeout(() => {
         document.body.removeChild(lightbox);
       }, 500);
-    });
+    }); // end event listener
 
     setTimeout(() => {
       lightbox.classList.add('fade-in');
     }, 50);
-  });
-});
+  }); // end eventListener
+}); // end forEach
