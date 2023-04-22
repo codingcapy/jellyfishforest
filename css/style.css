@@ -26,10 +26,6 @@ html {
     box-sizing: inherit;
 }
 
-:root{
-
-}
-
 main {
     flex: 1;
 }
