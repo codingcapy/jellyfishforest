@@ -110,6 +110,9 @@ images.forEach(image => {
     const fullSizeImage = document.createElement('img');
     fullSizeImage.src = image.src;
     fullSizeImage.classList.add('lightbox-image');
+    fullSizeImage.oncontextmenu = () => {
+      return false;
+    };
     const lightbox = document.createElement('div');
     lightbox.classList.add('lightbox');
     lightbox.appendChild(fullSizeImage);
