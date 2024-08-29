@@ -113,6 +113,10 @@ footer p {
     opacity: 0;
 }
 
+.footer {
+    font-family: 'Bough';
+}
+
 #wrapper {
     display: flex;
     flex-direction: column;
