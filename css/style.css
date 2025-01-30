@@ -85,6 +85,10 @@ footer p {
     height: auto;
 }
 
+.image2 {
+    cursor: pointer;
+}
+
 .lightbox {
     position: fixed;
     top: 0;

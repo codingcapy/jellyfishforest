@@ -104,8 +104,35 @@ function topFunction() {
 
 /*Lightbox feature */
 const images = document.querySelectorAll('.image');
+const images2 = document.querySelectorAll('.image2')
 
 images.forEach(image => {
+  image.addEventListener('click', () => {
+    const fullSizeImage = document.createElement('img');
+    fullSizeImage.src = image.src;
+    fullSizeImage.classList.add('lightbox-image');
+    fullSizeImage.oncontextmenu = () => {
+      return false;
+    };
+    const lightbox = document.createElement('div');
+    lightbox.classList.add('lightbox');
+    lightbox.appendChild(fullSizeImage);
+    document.body.appendChild(lightbox);
+
+    lightbox.addEventListener('click', () => {
+      lightbox.classList.add('fade-out');
+      setTimeout(() => {
+        document.body.removeChild(lightbox);
+      }, 500);
+    }); // end event listener
+
+    setTimeout(() => {
+      lightbox.classList.add('fade-in');
+    }, 50);
+  }); // end eventListener
+}); // end forEach
+
+images2.forEach(image => {
   image.addEventListener('click', () => {
     const fullSizeImage = document.createElement('img');
     fullSizeImage.src = image.src;
